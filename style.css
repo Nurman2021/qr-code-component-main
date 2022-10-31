@@ -1,0 +1,195 @@
+:root {
+    /* Theme colors */
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url(fonts/Outfit/static/Outfit-Light.ttf);
+}
+
+
+/* Css Reset */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* reset end */
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+}
+
+.qr-container {
+    height: 360px;
+    width: 200px;
+    background-color: var(--white);
+    border-radius: 10px;
+    margin: 15vh 5vw;
+    padding: 0.8rem;
+    display: block;
+    box-shadow: -4px 9px 47px -9px rgba(0, 0, 0, 0.43);
+    -webkit-box-shadow: -4px 9px 47px -9px rgba(0, 0, 0, 0.43);
+    -moz-box-shadow: -4px 9px 47px -9px rgba(0, 0, 0, 0.43);
+}
+
+.qr-text {
+    text-align: center;
+    margin: 0.8rem;
+}
+
+.qr-text>* {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Outfit';
+}
+
+.qr-text p {
+    color: var(--grayish-blue);
+}
+
+.qr-text h1 {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.qr-body img {
+    height: 200px;
+    border-radius: 10px;
+}
